@@ -143,9 +143,9 @@ class FieldViewHolderInputText(itemView: View,
     }
 
 
-    private val hasInputValue by lazy { itemView.findViewById(R.id.inputValue) != null }
-    private val hasErrorTextView by lazy { itemView.findViewById(R.id.inputErrorText) != null }
-    private val hasErrorImageView by lazy { itemView.findViewById(R.id.inputErrorImage) != null }
+    private val hasInputValue by lazy { itemView.findViewById<TextInputLayout>(R.id.inputValue) != null }
+    private val hasErrorTextView by lazy { itemView.findViewById<TextView>(R.id.inputErrorText) != null }
+    private val hasErrorImageView by lazy { itemView.findViewById<ImageView>(R.id.inputErrorImage) != null }
     private val inputValue by lazy { itemView.findViewById(R.id.inputValue) as TextInputLayout }
     private val editText by lazy {
         if (hasInputValue) inputValue.editText
