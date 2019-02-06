@@ -1,4 +1,6 @@
 before_install:
   ./gradlew dependencies || true
   yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28"
+  yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-26"
   yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;27.0.3"
+  yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.2"
