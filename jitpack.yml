@@ -1,4 +1,4 @@
 before_install:
   ./gradlew dependencies || true
-  yes | sdkmanager --licenses
-
+  ./sdkmanager --update
+  yes | ./sdkmanager --licenses
