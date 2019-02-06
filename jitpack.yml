@@ -1,2 +1,2 @@
 before_install:
-  ./gradlew dependencies || true
+- curl https://gist.github.com/claudiopaccone/fea0004f409a9d9df166fa34201167a7 | sh
