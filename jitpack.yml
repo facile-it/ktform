@@ -1,5 +1,4 @@
 before_install:
   ./gradlew dependencies || true
-  android update sdk --no-ui --filter build-tools-28.0.2,android-26,extra-android-m2repository
-  ./sdkmanager --update
-  yes | ./sdkmanager --licenses
+  yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28"
+  yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;27.0.3"
