@@ -158,7 +158,3 @@ eval splitJvmOpts $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS
 JVM_OPTS[${#JVM_OPTS[*]}]="-Dorg.gradle.appname=$APP_BASE_NAME"
 
 exec "$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
-
-exec yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-26"
-
-exec yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.2"
